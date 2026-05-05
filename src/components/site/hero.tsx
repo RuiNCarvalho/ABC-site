@@ -38,7 +38,7 @@ export function Hero() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_28%] contrast-110 brightness-105"
+            className="object-contain object-top contrast-110 brightness-105 sm:object-cover sm:object-[center_28%]"
           />
           <div className="absolute inset-0 bg-navy/10" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/54 to-navy/4" />
