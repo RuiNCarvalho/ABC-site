@@ -13,7 +13,7 @@ export default function PortfolioRoute() {
   return (
     <>
       <Header />
-      <main className="pt-16">
+      <main className="pt-[68px]">
         <PortfolioPage />
       </main>
       <Footer />

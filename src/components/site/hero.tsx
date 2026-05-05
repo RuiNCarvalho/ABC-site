@@ -40,9 +40,9 @@ export function Hero() {
             sizes="100vw"
             className="object-cover object-[center_28%] contrast-110 brightness-105"
           />
-          <div className="absolute inset-0 bg-navy/18" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/48 to-navy/8" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy/14 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/54 to-navy/4" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy/16 via-transparent to-transparent" />
         </>
       ) : (
         <>
@@ -56,7 +56,7 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="max-w-3xl">
+        <div className="max-w-2xl">
           <motion.div
             custom={0}
             variants={fadeUp}
@@ -73,7 +73,7 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.35rem]"
           >
             Eletricidade bem executada, do primeiro ponto ao quadro final
           </motion.h1>
@@ -83,7 +83,7 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="mb-10 max-w-2xl text-lg leading-relaxed text-white/72 sm:text-xl"
+            className="mb-9 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg"
           >
             Trabalhos para habitação, comércio e indústria, com planeamento claro,
             execução cuidada e atenção aos detalhes que ficam para uso diário.
@@ -94,7 +94,7 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="mb-14 flex flex-wrap gap-3"
+            className="mb-12 flex flex-wrap gap-3"
           >
             <Link
               href="/contacto"

@@ -13,7 +13,7 @@ export default function Contacto() {
   return (
     <>
       <Header />
-      <main className="pt-16">
+      <main className="pt-[68px]">
         <ContactPage />
       </main>
       <Footer />

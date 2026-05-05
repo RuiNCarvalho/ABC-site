@@ -85,26 +85,24 @@ function AnimatedCounter({
 
 export function TrustMetrics() {
   return (
-    <section className="relative overflow-hidden bg-navy py-14 lg:py-16">
-      <div className="absolute inset-0 bg-dot-pattern opacity-25 pointer-events-none" />
-
+    <section className="relative overflow-hidden border-y border-slate-200 bg-white py-8 lg:py-9">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
           viewport={{ once: true }}
-          className="mx-auto mb-9 max-w-xl text-center"
+          className="mx-auto mb-7 max-w-xl text-center"
         >
-          <h2 className="mb-3 text-2xl font-bold text-white sm:text-3xl">
+          <h2 className="mb-2 text-2xl font-bold text-graphite sm:text-3xl">
             Números que contam a nossa história
           </h2>
-          <p className="text-sm leading-relaxed text-white/60">
+          <p className="text-sm leading-relaxed text-slate-500">
             Uma leitura rápida do percurso da empresa e da sua evolução.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
+        <div className="grid grid-cols-2 divide-x-0 divide-y divide-slate-200 overflow-hidden rounded-lg border border-slate-200 bg-slate-50 sm:grid-cols-4 sm:divide-x sm:divide-y-0">
           {metrics.map((metric, i) => (
             <motion.div
               key={metric.label}
@@ -112,22 +110,22 @@ export function TrustMetrics() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: i * 0.06 }}
               viewport={{ once: true }}
-              className="rounded-xl border border-white/10 bg-white/8 p-5 text-center transition-colors hover:bg-white/12"
+              className="p-5 text-center transition-colors hover:bg-white"
             >
-              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-gold/15">
-                <metric.icon className="h-5 w-5 text-gold" />
+              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-white text-navy ring-1 ring-slate-200">
+                <metric.icon className="h-5 w-5" />
               </div>
-              <div className="mb-1 text-2xl font-bold tabular-nums text-white sm:text-3xl">
+              <div className="mb-1 text-2xl font-bold tabular-nums text-navy sm:text-3xl">
                 <AnimatedCounter
                   value={metric.value}
                   suffix={metric.suffix}
                   countUp={metric.countUp}
                 />
               </div>
-              <div className="mb-1 text-sm font-semibold text-white/80">
+              <div className="mb-1 text-sm font-semibold text-graphite">
                 {metric.label}
               </div>
-              <div className="text-xs leading-snug text-white/45">
+              <div className="text-xs leading-snug text-slate-500">
                 {metric.sublabel}
               </div>
             </motion.div>

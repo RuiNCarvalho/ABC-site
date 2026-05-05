@@ -19,27 +19,24 @@ export function Footer() {
   return (
     <footer className="bg-navy-dark text-white">
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-14">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.15fr_0.75fr_1.1fr]">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="mb-4">
+            <div className="mb-5">
               <Image
                 src={publicAsset("/logo_adelino_b_carvalho_transparente_2x.png")}
                 alt="Adelino B. Carvalho Instalações Elétricas Lda"
                 width={562}
                 height={96}
-                className="h-8 w-auto object-contain brightness-0 invert"
+                className="h-10 w-auto object-contain brightness-0 invert"
                 unoptimized
               />
             </div>
-            <p className="text-white/55 text-xs leading-relaxed mb-4">
+            <p className="max-w-sm text-sm leading-relaxed text-white/55">
               Empresa constituída em 2002, com experiência acumulada em
               instalações elétricas em Portugal.
             </p>
-            <div className="text-xs text-white/35 font-medium">
-              Rigor técnico e confiança
-            </div>
           </div>
 
           {/* Quick links */}
@@ -51,11 +48,11 @@ export function Footer() {
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("/") ? (
-                    <Link href={link.href} className="text-xs text-white/50 hover:text-gold transition-colors">
+                    <Link href={link.href} className="text-sm text-white/50 hover:text-gold transition-colors">
                       {link.label}
                     </Link>
                   ) : (
-                    <a href={link.href} className="text-xs text-white/50 hover:text-gold transition-colors">
+                    <a href={link.href} className="text-sm text-white/50 hover:text-gold transition-colors">
                       {link.label}
                     </a>
                   )}
@@ -69,13 +66,13 @@ export function Footer() {
             <h4 className="text-xs font-bold text-white/70 uppercase tracking-widest mb-4">
               Contacto
             </h4>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3.5">
               <a
                 href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
                 className="flex items-center gap-2.5 group"
               >
-                <Phone className="w-3.5 h-3.5 text-gold flex-shrink-0" />
-                <span className="text-xs text-white/55 group-hover:text-gold transition-colors">
+                <Phone className="w-4 h-4 text-gold flex-shrink-0" />
+                <span className="text-sm text-white/62 group-hover:text-gold transition-colors">
                   {siteConfig.phone}
                 </span>
               </a>
@@ -83,20 +80,20 @@ export function Footer() {
                 href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-2.5 group"
               >
-                <Mail className="w-3.5 h-3.5 text-gold flex-shrink-0" />
-                <span className="text-xs text-white/55 group-hover:text-gold transition-colors">
+                <Mail className="w-4 h-4 text-gold flex-shrink-0" />
+                <span className="text-sm text-white/62 group-hover:text-gold transition-colors">
                   {siteConfig.email}
                 </span>
               </a>
               <div className="flex items-center gap-2.5">
-                <MapPin className="w-3.5 h-3.5 text-gold flex-shrink-0" />
-                <span className="text-xs text-white/55">
+                <MapPin className="w-4 h-4 text-gold flex-shrink-0" />
+                <span className="text-sm text-white/62">
                   {siteConfig.address.country}
                 </span>
               </div>
               <div className="flex items-start gap-2.5">
-                <Clock className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-xs text-white/55 leading-relaxed">
+                <Clock className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-white/62 leading-relaxed">
                   {siteConfig.businessHours}
                 </span>
               </div>
@@ -104,7 +101,7 @@ export function Footer() {
                 href="https://www.livroreclamacoes.pt/Inicio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 block w-fit rounded-lg bg-white p-1.5 transition-transform hover:-translate-y-0.5"
+                className="mt-2 block w-fit rounded-md bg-white p-1.5 transition-transform hover:-translate-y-0.5"
                 aria-label="Abrir Livro de Reclamações Eletrónico"
               >
                 <Image
@@ -112,7 +109,7 @@ export function Footer() {
                   alt="Livro de Reclamações Eletrónico"
                   width={180}
                   height={56}
-                  className="h-14 w-auto"
+                  className="h-12 w-auto"
                 />
               </a>
             </div>
