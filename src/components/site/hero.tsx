@@ -65,7 +65,7 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur-sm"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-            Desde 1974 no setor elétrico
+            Empresa familiar de instalações elétricas
           </motion.div>
 
           <motion.h1

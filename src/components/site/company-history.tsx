@@ -42,7 +42,7 @@ export function CompanyHistory() {
               A nossa história
             </div>
             <h2 className="mb-4 text-3xl font-bold leading-tight text-graphite sm:text-4xl">
-              Desde 1974 no setor elétrico
+              Uma história construída com rigor
             </h2>
             <p className="max-w-xl text-sm leading-relaxed text-slate-600">
               Uma empresa familiar com décadas de experiência acumulada em

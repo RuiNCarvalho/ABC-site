@@ -34,11 +34,11 @@ export function Footer() {
               />
             </div>
             <p className="text-white/55 text-xs leading-relaxed mb-4">
-              Empresa constituída em 2002. Mais de 50 anos de experiência acumulada
-              no setor elétrico em Portugal.
+              Empresa constituída em 2002, com experiência acumulada em
+              instalações elétricas em Portugal.
             </p>
             <div className="text-xs text-white/35 font-medium">
-              Desde 1974 no setor elétrico
+              Rigor técnico e confiança
             </div>
           </div>
 

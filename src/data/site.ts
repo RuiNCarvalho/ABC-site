@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Adelino B. Carvalho Instalações Elétricas Lda",
   shortName: "Adelino B. Carvalho",
-  tagline: "Desde 1974 no setor elétrico",
+  tagline: "Instalações elétricas com rigor e confiança",
   description:
     "Instalações elétricas seguras, eficientes e certificadas para habitação, comércio e indústria. Mais de 50 anos de experiência acumulada.",
   founded: 1974,

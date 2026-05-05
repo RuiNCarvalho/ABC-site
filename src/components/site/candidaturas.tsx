@@ -36,7 +36,7 @@ type FormData = z.infer<typeof schema>;
 type Status = "idle" | "loading" | "success" | "error";
 
 const bullets = [
-  { icon: Award, text: "Mais de 50 anos de experiência no setor" },
+  { icon: Award, text: "Percurso sólido e trabalho exigente" },
   { icon: HardHat, text: "Equipa técnica qualificada e certificada" },
   { icon: Users, text: "Ambiente de trabalho sério e próximo" },
   { icon: Clock, text: "Estabilidade e progressão profissional" },
@@ -127,7 +127,7 @@ export function Candidaturas() {
           Procuramos profissionais com rigor, vontade de crescer e gosto pelo trabalho
           bem feito. Junte-se a uma empresa com{" "}
           <span className="text-gold font-semibold">mais de 50 anos</span> de
-          experiência no setor elétrico em Portugal.
+          experiência técnica em Portugal.
         </p>
 
         <ul className="flex flex-col gap-4 mb-12">
@@ -142,7 +142,7 @@ export function Candidaturas() {
         </ul>
 
         <div className="border-t border-white/10 pt-6 text-xs text-white/35 leading-relaxed">
-          Empresa constituída em 2002 · Desde 1974 no setor elétrico
+          Empresa constituída em 2002 · Equipa técnica qualificada
         </div>
       </motion.div>
 

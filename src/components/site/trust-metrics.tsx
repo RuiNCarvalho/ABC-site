@@ -19,7 +19,7 @@ const metrics: Metric[] = [
     value: 1974,
     suffix: "",
     label: "Início de atividade",
-    sublabel: "Desde 1974 no setor elétrico",
+    sublabel: "Início da experiência técnica",
     countUp: false,
   },
   {
@@ -100,7 +100,7 @@ export function TrustMetrics() {
             Décadas de experiência
           </h2>
           <p className="text-sm leading-relaxed text-white/60">
-            Dados simples para enquadrar a nossa história no setor elétrico.
+            Dados simples para enquadrar a nossa experiência e estrutura.
           </p>
         </motion.div>
 
