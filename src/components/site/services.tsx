@@ -35,8 +35,17 @@ export function Services() {
   const secondary = services.filter((service) => !featuredIds.has(service.id));
 
   return (
-    <section id="servicos" className="relative bg-white py-16 sm:py-20 lg:py-24">
+    <section id="servicos" className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-28">
       <div className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-40" />
+      <div className="pointer-events-none absolute -right-40 top-1/4 hidden h-[28rem] w-[28rem] rounded-full bg-navy/5 blur-3xl lg:block" />
+      <div className="pointer-events-none absolute -left-40 bottom-1/4 hidden h-96 w-96 rounded-full bg-gold/8 blur-3xl lg:block" />
+
+      {/* Watermark "10" serviços */}
+      <div className="pointer-events-none absolute left-4 top-12 hidden select-none lg:block">
+        <span className="block text-[12rem] font-black leading-none tracking-tighter text-navy/[0.025] xl:text-[15rem]">
+          09
+        </span>
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <motion.div
@@ -50,10 +59,14 @@ export function Services() {
             <span className="h-1.5 w-1.5 rounded-full bg-navy" />
             Serviços
           </div>
-          <h2 className="mb-4 text-[1.85rem] font-bold leading-[1.15] tracking-tight text-graphite sm:text-4xl lg:text-[2.5rem]">
-            Trabalhos preparados para cada tipo de espaço
+          <h2 className="mb-4 text-[1.85rem] font-bold leading-[1.15] tracking-tight text-graphite sm:text-4xl lg:text-[2.75rem] lg:leading-[1.05]">
+            Trabalhos preparados{" "}
+            <span className="relative inline-block">
+              <span className="relative z-10 italic text-navy">para cada espaço</span>
+              <span className="absolute inset-x-0 bottom-1 -z-0 h-2.5 bg-gold/30 lg:h-3" />
+            </span>
           </h2>
-          <p className="text-[0.95rem] leading-relaxed text-slate-600 sm:text-base">
+          <p className="text-[0.95rem] leading-relaxed text-slate-600 sm:text-base lg:text-[1.05rem] lg:leading-[1.7]">
             Cada intervenção é pensada para o uso real do espaço, desde a
             distribuição de circuitos à iluminação e documentação necessária.
           </p>
@@ -71,17 +84,23 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: i * 0.08 }}
                 viewport={{ once: true, margin: "-40px" }}
-                className={`group relative overflow-hidden rounded-2xl p-6 transition-all duration-300 sm:p-7 ${
+                className={`group relative overflow-hidden rounded-2xl p-6 transition-all duration-300 sm:p-7 lg:p-8 ${
                   isPrimary
-                    ? "border border-navy bg-gradient-to-br from-navy via-navy to-navy-dark text-white shadow-xl shadow-navy/20"
+                    ? "border border-navy bg-gradient-to-br from-navy via-navy to-navy-dark text-white shadow-xl shadow-navy/25 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-navy/30"
                     : "border border-slate-200 bg-white shadow-sm hover:-translate-y-1 hover:border-navy/30 hover:shadow-lg hover:shadow-navy/5"
                 }`}
               >
                 {isPrimary && (
                   <>
-                    <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gold/15 blur-3xl" />
-                    <div className="pointer-events-none absolute right-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+                    <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gold/20 blur-3xl" />
+                    <div className="pointer-events-none absolute right-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+                    <div className="pointer-events-none absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-gold/30 via-transparent to-transparent" />
+                    {/* Watermark icon */}
+                    <Icon className="pointer-events-none absolute -bottom-4 -right-4 h-32 w-32 text-white/[0.04]" />
                   </>
+                )}
+                {!isPrimary && (
+                  <div className="pointer-events-none absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-transparent via-gold to-transparent transition-transform duration-500 group-hover:scale-x-100" />
                 )}
 
                 <div className="relative mb-6 flex items-center justify-between">
@@ -103,14 +122,14 @@ export function Services() {
                   </span>
                 </div>
                 <h3
-                  className={`relative mb-2.5 text-[1.05rem] font-bold leading-snug sm:text-lg ${
+                  className={`relative mb-2.5 text-[1.05rem] font-bold leading-snug sm:text-lg lg:text-xl ${
                     isPrimary ? "text-white" : "text-graphite"
                   }`}
                 >
                   {service.title}
                 </h3>
                 <p
-                  className={`relative text-[13.5px] leading-relaxed sm:text-sm ${
+                  className={`relative text-[13.5px] leading-relaxed sm:text-sm lg:text-[14.5px] lg:leading-[1.65] ${
                     isPrimary ? "text-white/72" : "text-slate-600"
                   }`}
                 >

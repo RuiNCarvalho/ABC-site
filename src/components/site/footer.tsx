@@ -1,21 +1,32 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { ExternalLink, Phone, Mail, MapPin, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 import { publicAsset } from "@/lib/public-asset";
 
-const quickLinks = [
+const COPYRIGHT_YEAR = 2026;
+
+type QuickLink = {
+  href: string;
+  label: string;
+  external?: boolean;
+};
+
+const quickLinks: QuickLink[] = [
   { href: "#empresa", label: "A Empresa" },
   { href: "#servicos", label: "Serviços" },
   { href: "/portfolio", label: "Portfólio" },
   { href: "/candidaturas", label: "Candidaturas" },
   { href: "#faq", label: "Perguntas Frequentes" },
   { href: "/contacto", label: "Contacto" },
+  {
+    href: "https://ruincarvalho.github.io/Trited/",
+    label: "Trited",
+    external: true,
+  },
 ];
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="relative overflow-hidden bg-navy-dark text-white">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
@@ -47,6 +58,16 @@ export function Footer() {
                 Desde 1974
               </span>
             </div>
+
+            <a
+              href="https://ruincarvalho.github.io/Trited/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex max-w-sm items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-left text-[13px] font-semibold text-white/70 transition-colors hover:border-gold/30 hover:bg-white/[0.07] hover:text-gold"
+            >
+              Empresa associada: Trited
+              <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" aria-hidden="true" />
+            </a>
           </div>
 
           {/* Quick links */}
@@ -57,7 +78,18 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 sm:grid-cols-1 sm:gap-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  {link.href.startsWith("/") ? (
+                  {link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-1.5 text-[13.5px] text-white/55 transition-colors hover:text-gold sm:text-sm"
+                    >
+                      <span className="h-px w-2 bg-gold/0 transition-all duration-200 group-hover:w-3 group-hover:bg-gold" />
+                      {link.label}
+                      <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                    </a>
+                  ) : link.href.startsWith("/") ? (
                     <Link
                       href={link.href}
                       className="group inline-flex items-center gap-1.5 text-[13.5px] text-white/55 transition-colors hover:text-gold sm:text-sm"
@@ -148,10 +180,10 @@ export function Footer() {
       <div className="relative border-t border-white/8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-5 text-center sm:flex-row sm:px-6 sm:text-left lg:px-8">
           <p className="text-[11px] text-white/35">
-            © {currentYear} Adelino B. Carvalho Instalações Elétricas Lda. Todos os direitos reservados.
+            © {COPYRIGHT_YEAR} Adelino B. Carvalho Instalações Elétricas Lda. Todos os direitos reservados.
           </p>
           <p className="text-[11px] text-white/25">
-            Empresa constituída em 2002 · NIPC: xxxxxxxx
+            Empresa constituída em 2002 · Livro de Reclamações Eletrónico disponível
           </p>
         </div>
       </div>

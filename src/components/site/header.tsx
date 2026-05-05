@@ -2,18 +2,31 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { ExternalLink, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { publicAsset } from "@/lib/public-asset";
 
-const navLinks = [
+type NavLink = {
+  href: string;
+  label: string;
+  page: boolean;
+  external?: boolean;
+};
+
+const navLinks: NavLink[] = [
   { href: "#empresa", label: "Empresa", page: false },
   { href: "#servicos", label: "Serviços", page: false },
   { href: "/portfolio", label: "Portfólio", page: true },
   { href: "/candidaturas", label: "Candidaturas", page: true },
   { href: "/contacto", label: "Contacto", page: true },
+  {
+    href: "https://ruincarvalho.github.io/Trited/",
+    label: "Trited",
+    page: false,
+    external: true,
+  },
 ];
 
 export function Header() {
@@ -63,7 +76,18 @@ export function Header() {
 
             <nav className="ml-auto hidden items-center gap-2 lg:flex">
               {navLinks.map((link) =>
-                link.page ? (
+                link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${linkClass} inline-flex items-center gap-1.5`}
+                  >
+                    {link.label}
+                    <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                  </a>
+                ) : link.page ? (
                   <Link key={link.href} href={link.href} className={linkClass}>
                     {link.label}
                   </Link>
@@ -126,7 +150,19 @@ export function Header() {
             </div>
             <div className="flex w-full flex-col gap-1 px-4 py-4">
               {navLinks.map((link) =>
-                link.page ? (
+                link.external ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileOpen(false)}
+                    className="inline-flex items-center justify-between rounded-md px-3 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-navy"
+                  >
+                    {link.label}
+                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                  </a>
+                ) : link.page ? (
                   <Link
                     key={link.href}
                     href={link.href}

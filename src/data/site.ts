@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Adelino B. Carvalho Instalações Elétricas Lda",
   shortName: "Adelino B. Carvalho",
-  tagline: "Execução cuidada, obra limpa e acompanhamento próximo",
+  tagline: "Parceiros de construtoras em prédios novos do zero",
   description:
-    "Trabalhos elétricos para habitação, comércio e indústria, com atenção ao detalhe, cumprimento das normas e acompanhamento claro em cada fase.",
+    "Especialistas em instalações elétricas de raiz para prédios novos, em coordenação direta com construtoras e promotores — das fundações ao quadro final, com obra limpa e prazos cumpridos. Também executamos habitação, comércio e indústria.",
   founded: 1974,
   incorporated: 2002,
   yearsAsCompany: 24,
