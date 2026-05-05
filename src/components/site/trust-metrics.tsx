@@ -85,48 +85,58 @@ function AnimatedCounter({
 
 export function TrustMetrics() {
   return (
-    <section className="relative overflow-hidden border-y border-gold/30 bg-gold/12 py-8 lg:py-9">
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.55),transparent_45%,rgba(255,255,255,0.35))] pointer-events-none" />
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-navy py-14 sm:py-16 lg:py-18">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,209,128,0.10),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mx-auto mb-7 max-w-xl text-center"
+          className="mx-auto mb-10 max-w-xl text-center sm:mb-12"
         >
-          <h2 className="mb-2 text-2xl font-bold text-graphite sm:text-3xl">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3.5 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-gold">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+            Em números
+          </div>
+          <h2 className="mb-3 text-[1.65rem] font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
             Números que contam a nossa história
           </h2>
-          <p className="text-sm leading-relaxed text-slate-500">
+          <p className="text-[0.95rem] leading-relaxed text-white/60 sm:text-base">
             Uma leitura rápida do percurso da empresa e da sua evolução.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 divide-x-0 divide-y divide-gold/25 overflow-hidden rounded-lg border border-gold/30 bg-white/75 shadow-sm sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
           {metrics.map((metric, i) => (
             <motion.div
               key={metric.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: i * 0.06 }}
+              transition={{ duration: 0.45, delay: i * 0.07 }}
               viewport={{ once: true }}
-              className="p-5 text-center transition-colors hover:bg-white"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 hover:bg-white/[0.07] sm:p-6"
             >
-              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-navy text-gold">
-                <metric.icon className="h-5 w-5" />
+              <div className="pointer-events-none absolute -right-6 -top-6 h-16 w-16 rounded-full bg-gold/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
+
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-gold/20 to-gold/5 text-gold ring-1 ring-gold/20 sm:h-11 sm:w-11">
+                <metric.icon className="h-4.5 w-4.5 sm:h-5 sm:w-5" />
               </div>
-              <div className="mb-1 text-2xl font-bold tabular-nums text-navy sm:text-3xl">
+
+              <div className="mb-1.5 text-[1.65rem] font-bold leading-none tabular-nums text-white sm:text-3xl lg:text-[2.1rem]">
                 <AnimatedCounter
                   value={metric.value}
                   suffix={metric.suffix}
                   countUp={metric.countUp}
                 />
               </div>
-              <div className="mb-1 text-sm font-semibold text-graphite">
+              <div className="mb-1 text-[13px] font-semibold leading-tight text-white/95 sm:text-sm">
                 {metric.label}
               </div>
-              <div className="text-xs leading-snug text-slate-500">
+              <div className="text-[11px] leading-snug text-white/45 sm:text-xs">
                 {metric.sublabel}
               </div>
             </motion.div>
