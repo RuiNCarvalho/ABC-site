@@ -85,7 +85,8 @@ function AnimatedCounter({
 
 export function TrustMetrics() {
   return (
-    <section className="relative overflow-hidden border-y border-slate-200 bg-white py-8 lg:py-9">
+    <section className="relative overflow-hidden border-y border-gold/30 bg-gold/12 py-8 lg:py-9">
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.55),transparent_45%,rgba(255,255,255,0.35))] pointer-events-none" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -102,7 +103,7 @@ export function TrustMetrics() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 divide-x-0 divide-y divide-slate-200 overflow-hidden rounded-lg border border-slate-200 bg-slate-50 sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+        <div className="grid grid-cols-2 divide-x-0 divide-y divide-gold/25 overflow-hidden rounded-lg border border-gold/30 bg-white/75 shadow-sm sm:grid-cols-4 sm:divide-x sm:divide-y-0">
           {metrics.map((metric, i) => (
             <motion.div
               key={metric.label}
@@ -112,7 +113,7 @@ export function TrustMetrics() {
               viewport={{ once: true }}
               className="p-5 text-center transition-colors hover:bg-white"
             >
-              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-white text-navy ring-1 ring-slate-200">
+              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-navy text-gold">
                 <metric.icon className="h-5 w-5" />
               </div>
               <div className="mb-1 text-2xl font-bold tabular-nums text-navy sm:text-3xl">
