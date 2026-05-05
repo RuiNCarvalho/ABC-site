@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight, ImageOff, MapPin, Zap } from "lucide-react";
 import { portfolio, type PortfolioItem } from "@/data/site";
+import { publicAsset } from "@/lib/public-asset";
 
 const categories = ["Todos", "Residencial", "Comercial", "Industrial"];
 
@@ -34,7 +35,7 @@ function PortfolioProject({ item, index }: { item: PortfolioItem; index: number 
       <div className="relative aspect-[4/3] overflow-hidden">
         {!imgError && item.image ? (
           <Image
-            src={item.image}
+            src={publicAsset(item.image)}
             alt={item.title}
             fill
             sizes="(min-width: 1024px) 24vw, (min-width: 640px) 45vw, 90vw"

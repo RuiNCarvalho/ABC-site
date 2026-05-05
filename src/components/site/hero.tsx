@@ -5,6 +5,7 @@ import { ArrowRight, Award, ChevronDown, Shield, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import { publicAsset } from "@/lib/public-asset";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -32,7 +33,7 @@ export function Hero() {
       {heroImage ? (
         <>
           <Image
-            src={heroImage}
+            src={publicAsset(heroImage)}
             alt=""
             fill
             priority

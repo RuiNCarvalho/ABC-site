@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { MapPin, Zap, ImageOff } from "lucide-react";
 import { portfolio, type PortfolioItem } from "@/data/site";
+import { publicAsset } from "@/lib/public-asset";
 
 const categories = ["Todos", "Residencial", "Comercial", "Industrial"];
 
@@ -37,7 +38,7 @@ function PortfolioCard({ item, index }: { item: PortfolioItem; index: number }) 
       <div className="aspect-[4/3] relative overflow-hidden">
         {!imgError && item.image ? (
           <Image
-            src={item.image}
+            src={publicAsset(item.image)}
             alt={item.title}
             fill
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"

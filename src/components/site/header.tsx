@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { publicAsset } from "@/lib/public-asset";
 
 const navLinks = [
   { href: "#empresa", label: "Empresa", page: false },
@@ -48,7 +49,7 @@ export function Header() {
           <div className="flex h-16 items-center">
             <Link href="/" className="flex min-w-0 items-center">
               <Image
-                src="/logo_adelino_b_carvalho_transparente_2x.png"
+                src={publicAsset("/logo_adelino_b_carvalho_transparente_2x.png")}
                 alt="Adelino B. Carvalho Instalações Elétricas Lda"
                 width={562}
                 height={96}

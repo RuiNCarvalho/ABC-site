@@ -2,6 +2,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import { publicAsset } from "@/lib/public-asset";
 
 const quickLinks = [
   { href: "#empresa", label: "A Empresa" },
@@ -24,7 +25,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/logo_adelino_b_carvalho_transparente_2x.png"
+                src={publicAsset("/logo_adelino_b_carvalho_transparente_2x.png")}
                 alt="Adelino B. Carvalho Instalações Elétricas Lda"
                 width={562}
                 height={96}
@@ -107,7 +108,7 @@ export function Footer() {
                 aria-label="Abrir Livro de Reclamações Eletrónico"
               >
                 <Image
-                  src="/livro-reclamacoes.svg"
+                  src={publicAsset("/livro-reclamacoes.svg")}
                   alt="Livro de Reclamações Eletrónico"
                   width={180}
                   height={56}
