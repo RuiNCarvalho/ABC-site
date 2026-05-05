@@ -41,8 +41,8 @@ const metrics: Metric[] = [
     icon: Briefcase,
     value: 50,
     suffix: "+ anos",
-    label: "De experiência",
-    sublabel: "Experiência acumulada no setor",
+    label: "Percurso técnico",
+    sublabel: "Conhecimento aplicado em obra",
   },
 ];
 
@@ -97,10 +97,10 @@ export function TrustMetrics() {
           className="mx-auto mb-9 max-w-xl text-center"
         >
           <h2 className="mb-3 text-2xl font-bold text-white sm:text-3xl">
-            Décadas de experiência
+            Números que contam a nossa história
           </h2>
           <p className="text-sm leading-relaxed text-white/60">
-            Dados simples para enquadrar a nossa experiência e estrutura.
+            Uma leitura rápida do percurso da empresa e da sua evolução.
           </p>
         </motion.div>
 

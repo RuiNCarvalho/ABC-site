@@ -124,9 +124,9 @@ export function PortfolioPage() {
             Portfólio
           </h1>
           <p className="max-w-3xl text-base leading-relaxed text-white/65">
-            Algumas das nossas obras que nos deixam orgulhosos dos nossos
-            serviços. Uma seleção inicial de trabalhos realizados nas áreas
-            residencial, comercial e industrial.
+            Uma seleção inicial de trabalhos que mostram diferentes contextos
+            de obra, desde habitação a espaços comerciais e infraestruturas
+            técnicas.
           </p>
         </motion.div>
       </section>
@@ -139,7 +139,7 @@ export function PortfolioPage() {
                 Obras em destaque
               </h2>
               <p className="text-xs text-slate-500">
-                Deslize na horizontal ou use as setas para ver mais projetos.
+                Deslize na horizontal para percorrer os projetos disponíveis.
               </p>
             </div>
 

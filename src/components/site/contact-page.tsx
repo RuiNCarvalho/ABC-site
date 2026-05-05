@@ -121,9 +121,8 @@ export function ContactPage() {
         </h1>
 
         <p className="text-white/65 leading-relaxed mb-10 max-w-md text-base">
-          Envie-nos o seu pedido e diga-nos o que precisa. Respondemos a todos
-          os contactos em menos de{" "}
-          <span className="text-gold font-semibold">24 horas úteis</span>.
+          Conte-nos o que pretende fazer, em que tipo de espaço e com que
+          prioridade. Assim conseguimos responder de forma mais útil.
         </p>
 
         <ul className="flex flex-col gap-4 mb-12">
@@ -157,7 +156,7 @@ export function ContactPage() {
         </ul>
 
         <div className="border-t border-white/10 pt-6 text-xs text-white/35 leading-relaxed">
-          Para pedidos de orçamento ou informações, contacte-nos por telefone ou email.
+          Para assuntos simples, o telefone ou email pode ser o caminho mais direto.
         </div>
       </motion.div>
 
@@ -189,7 +188,7 @@ export function ContactPage() {
               Envie a sua mensagem
             </h2>
             <p className="text-slate-500 text-xs mb-2">
-              Preencha o formulário e entraremos em contacto consigo.
+              Indique o essencial e voltamos ao contacto assim que possível.
             </p>
 
             <input
@@ -233,7 +232,7 @@ export function ContactPage() {
               </label>
               <input
                 {...register("subject")}
-                placeholder="Ex: Pedido de orçamento para instalação elétrica"
+                placeholder="Ex: Quadro elétrico para moradia"
                 className={inputClass}
               />
               {errors.subject && (
@@ -263,7 +262,7 @@ export function ContactPage() {
               <textarea
                 {...register("message")}
                 rows={5}
-                placeholder="Descreva o seu projeto ou pedido com o máximo de detalhe possível..."
+                placeholder="Descreva o espaço, o trabalho pretendido e a localização..."
                 className={`${inputClass} resize-none`}
               />
               {errors.message && (

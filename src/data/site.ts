@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Adelino B. Carvalho Instalações Elétricas Lda",
   shortName: "Adelino B. Carvalho",
-  tagline: "Instalações elétricas com rigor e confiança",
+  tagline: "Execução cuidada, obra limpa e acompanhamento próximo",
   description:
-    "Instalações elétricas seguras, eficientes e certificadas para habitação, comércio e indústria. Mais de 50 anos de experiência acumulada.",
+    "Trabalhos elétricos para habitação, comércio e indústria, com atenção ao detalhe, cumprimento das normas e acompanhamento claro em cada fase.",
   founded: 1974,
   incorporated: 2002,
   yearsAsCompany: 24,
@@ -34,63 +34,63 @@ export const services: Service[] = [
     id: "residencial",
     title: "Instalações Residenciais",
     description:
-      "Instalações elétricas completas para habitação — do projeto à certificação e inspeção final.",
+      "Planeamento e execução para moradias, apartamentos e remodelações, com soluções ajustadas ao uso diário da casa.",
     icon: "Home",
   },
   {
     id: "comercial",
     title: "Instalações Comerciais",
     description:
-      "Soluções elétricas para espaços comerciais, lojas, escritórios e restauração.",
+      "Infraestruturas pensadas para lojas, escritórios e restauração, com atenção a iluminação, segurança e continuidade de funcionamento.",
     icon: "Building2",
   },
   {
     id: "industrial",
     title: "Instalações Industriais",
     description:
-      "Infraestruturas elétricas robustas para indústria, armazéns e grandes instalações.",
+      "Redes dimensionadas para ambientes exigentes, armazéns e unidades produtivas com maiores necessidades de carga.",
     icon: "Factory",
   },
   {
     id: "quadros",
     title: "Quadros Elétricos",
     description:
-      "Fornecimento, instalação e atualização de quadros elétricos com proteções certificadas.",
+      "Montagem e atualização de quadros com organização, proteção adequada e identificação clara dos circuitos.",
     icon: "LayoutGrid",
   },
   {
     id: "iluminacao",
     title: "Iluminação LED",
     description:
-      "Projetos de iluminação LED eficientes para habitação, comércio e indústria.",
+      "Estudo e aplicação de iluminação eficiente para melhorar conforto, consumo e apresentação dos espaços.",
     icon: "Lightbulb",
   },
   {
     id: "certificacao",
     title: "Certificação e Inspeção",
     description:
-      "Emissão de certificados elétricos e acompanhamento de inspeções pela CERTIEL/EDP.",
+      "Preparação da documentação necessária e apoio nos processos de inspeção junto das entidades competentes.",
     icon: "ShieldCheck",
   },
   {
     id: "redes",
     title: "Redes e Infraestruturas",
     description:
-      "Infraestruturas técnicas para telecomunicações, redes estruturadas e sistemas de dados.",
+      "Cablagem técnica, telecomunicações e redes estruturadas para espaços preparados para crescer.",
     icon: "Network",
   },
   {
     id: "carregadores",
     title: "Carregadores para VE",
     description:
-      "Instalação de postos de carregamento para veículos elétricos em habitações e empresas.",
+      "Instalação de pontos de carregamento para veículos elétricos em contexto particular ou empresarial.",
     icon: "Zap",
   },
   {
     id: "remodelacoes",
     title: "Remodelações Elétricas",
     description:
-      "Atualização e remodelação de instalações elétricas antigas, com adequação às normas vigentes.",
+      "Renovação de circuitos antigos para tornar o espaço mais seguro, funcional e preparado para novas necessidades.",
     icon: "Hammer",
   },
 ];
@@ -111,7 +111,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Instalação Elétrica Residencial",
     category: "Residencial",
     description:
-      "Instalação elétrica completa em moradia unifamiliar, incluindo quadro elétrico e iluminação.",
+      "Execução completa em moradia, com distribuição organizada, quadro renovado e pontos de luz adaptados ao projeto.",
     location: "Lisboa",
     service: "Instalações Residenciais",
   },
@@ -120,7 +120,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Quadro Elétrico Industrial",
     category: "Industrial",
     description:
-      "Fornecimento e instalação de quadro elétrico em unidade industrial, com proteções certificadas.",
+      "Quadro preparado para utilização intensiva, com proteções adequadas e identificação cuidada dos circuitos.",
     location: "Setúbal",
     service: "Quadros Elétricos",
   },
@@ -129,7 +129,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Iluminação LED Comercial",
     category: "Comercial",
     description:
-      "Projeto de iluminação LED em espaço comercial, com redução de consumo energético de 60%.",
+      "Reformulação de iluminação para valorizar o espaço, reduzir consumos e melhorar a experiência de utilização.",
     location: "Almada",
     service: "Iluminação LED",
   },
@@ -138,7 +138,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Infraestrutura Técnica Empresarial",
     category: "Comercial",
     description:
-      "Infraestrutura elétrica e de dados completa para edifício de escritórios.",
+      "Rede elétrica e dados preparada para equipas, postos de trabalho e expansão futura.",
     location: "Lisboa",
     service: "Redes e Infraestruturas",
   },
@@ -147,7 +147,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Posto de Carregamento VE",
     category: "Residencial",
     description:
-      "Instalação de carregador para veículo elétrico em moradia particular, com contador dedicado.",
+      "Ponto de carregamento dedicado em moradia, integrado com a instalação existente.",
     location: "Cascais",
     service: "Carregadores para VE",
   },
@@ -164,25 +164,25 @@ export const testimonials: Testimonial[] = [
   {
     name: "João Silva",
     role: "Proprietário de habitação",
-    text: "Trabalho sério, limpo e com garantia. Recomendo sem hesitar a qualquer pessoa que precise de instalações elétricas de confiança.",
+    text: "Trabalho organizado, limpo e explicado com clareza do início ao fim.",
     rating: 5,
   },
   {
     name: "Maria Santos",
     role: "Responsável de empresa",
-    text: "Profissionais experientes e rigorosos. Cumpriram os prazos e o orçamento. A qualidade do trabalho é excelente.",
+    text: "Cumpriram o combinado e deixaram tudo pronto a funcionar sem complicações.",
     rating: 5,
   },
   {
     name: "Carlos Rodrigues",
     role: "Empresário do setor industrial",
-    text: "Já trabalhámos com a Adelino B. Carvalho em vários projetos industriais. A experiência e o profissionalismo fazem toda a diferença.",
+    text: "A equipa mostrou capacidade para responder a um projeto exigente sem perder detalhe.",
     rating: 5,
   },
   {
     name: "Ana Ferreira",
     role: "Gerente de espaço comercial",
-    text: "Reformulámos toda a instalação elétrica do nosso espaço e ficámos muito satisfeitos. Atendimento rápido e transparente.",
+    text: "A intervenção foi bem coordenada e permitiu-nos reabrir o espaço dentro do prazo.",
     rating: 5,
   },
 ];
@@ -196,27 +196,27 @@ export const faqs: FaqItem[] = [
   {
     question: "Que tipo de trabalhos realizam?",
     answer:
-      "Realizamos instalações elétricas residenciais, comerciais e industriais, montagem de quadros elétricos, iluminação LED, certificação de instalações, infraestruturas técnicas e instalação de carregadores para veículos elétricos.",
+      "Trabalhamos em habitações, comércio e indústria. Fazemos quadros, iluminação, redes técnicas, carregadores para veículos elétricos e apoio à certificação.",
   },
   {
     question: "Como posso pedir um orçamento?",
     answer:
-      "Pode pedir um orçamento através do formulário de contacto nesta página, por telefone ou por email. Respondemos habitualmente dentro de 24 horas úteis. Dependendo do tipo de trabalho, podemos fazer uma visita técnica sem compromisso.",
+      "Pode usar o formulário, telefone ou email. Quanto mais detalhe enviar sobre o espaço e o trabalho pretendido, mais rápido conseguimos orientar o pedido.",
   },
   {
     question: "Têm certificação para realizar instalações elétricas?",
     answer:
-      "Sim. Somos uma empresa certificada, devidamente registada na DGEG (Direção-Geral de Energia e Geologia), e realizamos todos os trabalhos em conformidade com as normas técnicas e a legislação em vigor em Portugal.",
+      "Sim. Os trabalhos são realizados de acordo com as normas técnicas aplicáveis e com a legislação em vigor em Portugal.",
   },
   {
     question: "Emitem certificado elétrico após as obras?",
     answer:
-      "Sim. Após a conclusão das obras, emitimos a declaração de conformidade das instalações e acompanhamos todo o processo de inspeção e certificação junto da entidade competente.",
+      "Quando aplicável, preparamos a documentação necessária e acompanhamos o processo junto da entidade competente.",
   },
   {
     question: "Trabalham em todo o país?",
     answer:
-      "A nossa área de atuação principal é Portugal Continental. Para projetos fora da área habitual, consulte-nos para verificar a disponibilidade.",
+      "A disponibilidade depende da localização e dimensão do trabalho. Envie-nos o pedido para avaliarmos a melhor forma de avançar.",
   },
 ];
 
@@ -225,24 +225,24 @@ export const processSteps = [
     step: "01",
     title: "Contacto e Diagnóstico",
     description:
-      "Entre em contacto por telefone, email ou formulário. Analisamos o seu pedido e agendamos uma visita técnica se necessário.",
+      "Recebemos o pedido, percebemos o contexto e definimos se é necessária uma visita ao local.",
   },
   {
     step: "02",
     title: "Proposta e Orçamento",
     description:
-      "Apresentamos uma proposta detalhada com orçamento claro, sem custos ocultos. Toda a documentação técnica é fornecida.",
+      "Preparamos uma proposta objetiva, com o âmbito do trabalho e as condições bem definidas.",
   },
   {
     step: "03",
     title: "Execução e Acompanhamento",
     description:
-      "Os trabalhos são executados por técnicos qualificados, com rigor técnico e respeito pelo espaço e prazos acordados.",
+      "Acompanhamos a obra no terreno, mantendo organização, limpeza e comunicação durante a execução.",
   },
   {
     step: "04",
     title: "Certificação e Entrega",
     description:
-      "Após conclusão, emitimos toda a documentação de conformidade. A instalação fica certificada e entregue com garantia.",
+      "No final, verificamos o trabalho, tratamos da documentação aplicável e deixamos a instalação pronta a usar.",
   },
 ];

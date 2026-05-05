@@ -23,8 +23,8 @@ export function Testimonials() {
             O que dizem os nossos clientes
           </h2>
           <p className="text-slate-600">
-            A confiança dos nossos clientes é o resultado de décadas de trabalho sério,
-            honesto e de qualidade.
+            Opiniões de clientes que valorizam organização, comunicação e
+            cuidado na entrega.
           </p>
         </motion.div>
 

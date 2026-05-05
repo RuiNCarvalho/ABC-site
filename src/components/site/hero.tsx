@@ -19,7 +19,7 @@ const fadeUp = {
 const highlights = [
   { icon: Shield, label: "Empresa certificada" },
   { icon: Award, label: "Desde 1974" },
-  { icon: Zap, label: "Mais de 50 anos de experiência" },
+  { icon: Zap, label: "Obra limpa e acompanhada" },
 ];
 
 export function Hero() {
@@ -75,7 +75,7 @@ export function Hero() {
             animate="show"
             className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Instalações elétricas com rigor, experiência e confiança
+            Eletricidade bem executada, do primeiro ponto ao quadro final
           </motion.h1>
 
           <motion.p
@@ -85,8 +85,8 @@ export function Hero() {
             animate="show"
             className="mb-10 max-w-2xl text-lg leading-relaxed text-white/72 sm:text-xl"
           >
-            Soluções elétricas para habitação, comércio e indústria, com mais de{" "}
-            <span className="font-semibold text-gold">50 anos</span> de experiência no setor.
+            Trabalhos para habitação, comércio e indústria, com planeamento claro,
+            execução cuidada e atenção aos detalhes que ficam para uso diário.
           </motion.p>
 
           <motion.div

@@ -119,7 +119,8 @@ export function Portfolio() {
             Trabalhos que falam por nós
           </h2>
           <p className="text-slate-600">
-            Exemplos de projetos executados com rigor técnico, nas áreas residencial, comercial e industrial.
+            Exemplos de trabalhos em diferentes tipos de espaço, com foco na
+            execução e no resultado final.
           </p>
         </motion.div>
 

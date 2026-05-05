@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Adelino B. Carvalho Instalações Elétricas",
   },
   description:
-    "Mais de 50 anos de experiência em instalações elétricas residenciais, comerciais e industriais. Empresa constituída em 2002. Soluções elétricas seguras, eficientes e certificadas.",
+    "Empresa de instalações elétricas para habitação, comércio e indústria, com execução cuidada, acompanhamento próximo e trabalho de acordo com as normas aplicáveis.",
   keywords: [
     "instalações elétricas",
     "eletricista",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "pt_PT",
     title: "Adelino B. Carvalho Instalações Elétricas Lda",
     description:
-      "Mais de 50 anos de experiência em instalações elétricas. Soluções seguras, eficientes e certificadas.",
+      "Trabalhos elétricos para habitação, comércio e indústria, com planeamento claro e execução cuidada.",
     siteName: "Adelino B. Carvalho Instalações Elétricas",
   },
 };

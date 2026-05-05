@@ -6,7 +6,7 @@ import { PortfolioPage } from "@/components/site/portfolio-page";
 export const metadata: Metadata = {
   title: "Portfólio",
   description:
-    "Conheça alguns projetos realizados pela Adelino B. Carvalho Instalações Elétricas Lda.",
+    "Veja uma seleção de trabalhos elétricos realizados em contextos residenciais, comerciais e técnicos.",
 };
 
 export default function PortfolioRoute() {

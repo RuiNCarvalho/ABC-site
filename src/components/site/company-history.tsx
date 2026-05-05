@@ -9,7 +9,7 @@ const timeline = [
     icon: CalendarDays,
     title: "Início da atividade",
     description:
-      "Adelino B. Carvalho inicia atividade no setor elétrico, com foco em instalações.",
+      "Começa um percurso ligado à eletricidade, feito de trabalho de proximidade e aprendizagem no terreno.",
   },
   {
     year: "2002",
@@ -21,9 +21,9 @@ const timeline = [
   {
     year: "Hoje",
     icon: TrendingUp,
-    title: "Mais de 50 anos de experiência",
+    title: "Continuidade familiar",
     description:
-      "Continuamos a trabalhar com rigor técnico para clientes particulares, empresas e indústria.",
+      "A empresa mantém uma atuação próxima, orientada para obras bem preparadas e entregues com seriedade.",
   },
 ];
 
@@ -42,11 +42,11 @@ export function CompanyHistory() {
               A nossa história
             </div>
             <h2 className="mb-4 text-3xl font-bold leading-tight text-graphite sm:text-4xl">
-              Uma história construída com rigor
+              Uma empresa construída no terreno
             </h2>
             <p className="max-w-xl text-sm leading-relaxed text-slate-600">
-              Uma empresa familiar com décadas de experiência acumulada em
-              instalações elétricas residenciais, comerciais e industriais.
+              Crescemos com trabalho prático, relações de confiança e atenção
+              ao que cada cliente precisa em obra.
             </p>
 
           </motion.div>

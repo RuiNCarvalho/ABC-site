@@ -22,7 +22,8 @@ export function Process() {
             Processo simples e transparente
           </h2>
           <p className="text-slate-600">
-            Do primeiro contacto à entrega da obra, acompanhamos cada etapa com rigor e clareza.
+            Do primeiro contacto à entrega, mantemos o processo simples,
+            organizado e fácil de acompanhar.
           </p>
         </motion.div>
 

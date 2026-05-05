@@ -6,7 +6,7 @@ import { ContactPage } from "@/components/site/contact-page";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Entre em contacto com a Adelino B. Carvalho Instalações Elétricas Lda. Pedidos de orçamento e informações sobre instalações elétricas.",
+    "Fale com a Adelino B. Carvalho Instalações Elétricas Lda para pedidos, dúvidas ou marcação de contacto técnico.",
 };
 
 export default function Contacto() {

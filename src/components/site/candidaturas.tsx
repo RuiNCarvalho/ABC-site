@@ -37,7 +37,7 @@ type Status = "idle" | "loading" | "success" | "error";
 
 const bullets = [
   { icon: Award, text: "Percurso sólido e trabalho exigente" },
-  { icon: HardHat, text: "Equipa técnica qualificada e certificada" },
+  { icon: HardHat, text: "Trabalho de campo e aprendizagem contínua" },
   { icon: Users, text: "Ambiente de trabalho sério e próximo" },
   { icon: Clock, text: "Estabilidade e progressão profissional" },
 ];
@@ -124,10 +124,8 @@ export function Candidaturas() {
         </h1>
 
         <p className="text-white/65 leading-relaxed mb-10 max-w-md text-base">
-          Procuramos profissionais com rigor, vontade de crescer e gosto pelo trabalho
-          bem feito. Junte-se a uma empresa com{" "}
-          <span className="text-gold font-semibold">mais de 50 anos</span> de
-          experiência técnica em Portugal.
+          Procuramos pessoas responsáveis, com vontade de aprender e gosto por
+          trabalho bem feito. Valorizamos pontualidade, cuidado e atitude em obra.
         </p>
 
         <ul className="flex flex-col gap-4 mb-12">
@@ -142,7 +140,7 @@ export function Candidaturas() {
         </ul>
 
         <div className="border-t border-white/10 pt-6 text-xs text-white/35 leading-relaxed">
-          Empresa constituída em 2002 · Equipa técnica qualificada
+          Candidaturas analisadas com discrição e resposta individual
         </div>
       </motion.div>
 
@@ -158,8 +156,8 @@ export function Candidaturas() {
             <CheckCircle className="w-12 h-12 text-green-500 mb-4" />
             <h2 className="text-xl font-bold text-graphite mb-2">Candidatura enviada!</h2>
             <p className="text-slate-500 text-sm mb-6">
-              Recebemos a sua candidatura. Analisamos com atenção e entramos em contacto
-              se o perfil corresponder às nossas necessidades.
+              Recebemos os seus dados. Vamos analisar o perfil e responder se
+              houver enquadramento com as necessidades atuais.
             </p>
             <button
               onClick={() => setStatus("idle")}
@@ -172,7 +170,7 @@ export function Candidaturas() {
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 max-w-md w-full mx-auto lg:mx-0">
             <h2 className="text-xl font-bold text-graphite mb-1">Envie a sua candidatura</h2>
             <p className="text-slate-500 text-xs mb-2">
-              Preencha o formulário e anexe o seu currículo.
+              Envie os seus dados e, se possível, anexe o currículo.
             </p>
 
             {/* Honeypot */}

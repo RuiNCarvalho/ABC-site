@@ -48,11 +48,11 @@ export function Services() {
             Serviços
           </div>
           <h2 className="mb-3 text-3xl font-bold leading-tight text-graphite sm:text-4xl">
-            Instalações elétricas para habitação, comércio e indústria
+            Trabalhos preparados para cada tipo de espaço
           </h2>
           <p className="text-sm leading-relaxed text-slate-600">
-            Soluções técnicas claras, executadas com rigor e adaptadas ao tipo
-            de espaço e necessidade de cada projeto.
+            Cada intervenção é pensada para o uso real do espaço, desde a
+            distribuição de circuitos à iluminação e documentação necessária.
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ export function Services() {
         >
           <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <h3 className="text-sm font-bold uppercase tracking-widest text-navy">
-              Outros trabalhos
+              Áreas complementares
             </h3>
             <Link
               href="/contacto"

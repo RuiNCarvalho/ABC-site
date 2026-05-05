@@ -28,10 +28,10 @@ export function Faq() {
               Perguntas frequentes
             </div>
             <h2 className="mb-3 text-2xl font-bold leading-tight text-graphite sm:text-3xl">
-              Dúvidas mais comuns
+              Antes de avançar
             </h2>
             <p className="mb-5 text-sm leading-relaxed text-slate-600">
-              Algumas respostas rápidas antes de avançar com o seu pedido.
+              Respostas curtas para perceber melhor como começamos cada pedido.
             </p>
             <Link
               href="/contacto"

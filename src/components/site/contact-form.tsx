@@ -68,7 +68,7 @@ export function ContactForm() {
             Contacte-nos
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-graphite leading-tight mb-4">
-            Peça um orçamento sem compromisso
+            Diga-nos o que precisa
           </h2>
           <p className="text-slate-600">
             Preencha o formulário e entraremos em contacto o mais rapidamente possível.
@@ -135,7 +135,7 @@ export function ContactForm() {
                 {siteConfig.businessHours}
               </div>
               <div className="mt-4 pt-4 border-t border-white/10 text-xs text-white/50">
-                Para pedidos de orçamento ou informações, contacte-nos por telefone.
+                Para assuntos simples, o telefone continua a ser o caminho mais direto.
               </div>
             </div>
           </motion.div>
@@ -236,7 +236,7 @@ export function ContactForm() {
                   <textarea
                     {...register("message")}
                     rows={4}
-                    placeholder="Descreva o seu projeto ou pedido..."
+                    placeholder="Indique o espaço, localização e trabalho pretendido..."
                     className={`${inputClass} resize-none`}
                   />
                   {errors.message && (

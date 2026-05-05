@@ -6,7 +6,7 @@ import { Candidaturas } from "@/components/site/candidaturas";
 export const metadata: Metadata = {
   title: "Candidaturas",
   description:
-    "Junte-se à equipa da Adelino B. Carvalho Instalações Elétricas Lda. Empresa com mais de 50 anos de experiência no setor elétrico.",
+    "Envie a sua candidatura para integrar uma equipa técnica ligada a obras elétricas em Portugal.",
 };
 
 export default function CandidaturasPage() {
